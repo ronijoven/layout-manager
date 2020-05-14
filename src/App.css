@@ -1,0 +1,325 @@
+body {
+	font-size:12px !important;
+	margin:0px;
+}
+#page-content-wrapper, .content {
+	margin-top: 4em;
+	padding:1em;
+}
+.react-grid-item {
+	background: aqua;
+}
+.container {
+	padding:0px;
+	max-width: 100%;
+}
+.rectangle {
+	padding-right: 1em;
+	width:100%;
+	height:4em;
+}
+button.btn-small {
+	height:2em;
+	padding-top:0px;
+}
+button.spaceout {
+	margin-left:0.5em;
+}
+.space-below {
+	margin-bottom: 1em;
+}
+.react-icon {
+	font-size:1.2rem;
+	padding-right:1em;
+}
+.react-icon svg {
+	cursor: pointer;
+}
+.btn-margin {
+  	margin: 7px 3px;
+}
+.react-grid-item .text {
+   	font-size:1em !important;
+}
+.not-home {
+	background-color: #ffffff;
+}
+
+.home-page .large-text {
+	margin-top: 6%;
+	font-size: 70px;
+}
+
+.home-page img {
+	max-height: 100px;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+.navbar  {
+	padding:0px;
+}
+.navbar a {
+    color: rgba(255, 255, 255, 1) !important; 
+	padding: 0.5rem 1rem;
+	font-size: 0.9rem;
+}
+.navbar a:hover {
+	background: grey;
+}
+.navbar-expand-md .navbar-nav .dropdown-menu {
+	background: #343a40;
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.modal.fade {
+   -webkit-transition: opacity 0.10s linear;
+      -moz-transition: opacity 0.10s linear;
+       -ms-transition: opacity 0.10s linear;
+        -o-transition: opacity 0.10s linear;
+           transition: opacity 0.10s linear;
+}
+
+legend {
+	margin-top: 40px;
+}
+
+.table>tbody, .table>tbody>tbody {
+	max-height: 800px;
+	overflow: scroll;
+}
+.table>tbody>tbody {
+	display:block;
+	width:100%;
+}
+.livecart{
+  margin: 0 auto;
+  float: none;
+}
+.table>tbody>tr>td {
+	border: none;
+}
+
+.table>tbody>tr>td:first-child,
+.table>thead>tr>th:first-child {
+	padding-left: 40px;
+}
+
+.table>tbody>tr>td,
+.table>thead>tr>th {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+table thead th {
+	font-size: 14px;
+	font-weight: bolder;
+}
+
+.table>thead>tr>th {
+	border: none;
+}
+
+table.pos tbody tr td input {
+	border: none;
+	background: transparent;
+	width: 100%;
+	border-bottom: 1px dashed black;
+	text-align: center;
+}
+
+table.pos tbody tr td input:focus {
+	outline-color: transparent;	
+}
+
+table.pos tbody tr td input::-webkit-outer-spin-button,
+table.pos tbody tr td input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+table.receipt>tbody>tr>td, 
+table.receipt>tfoot>tr>td {
+	padding: 10px;
+}
+
+h4.current-page {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+nav-menu {
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+nav-menu h1 {
+	font-size: 50px;
+}
+
+ul.nav-menu {
+	margin-top: 25px;
+	margin-bottom: 45px;
+}
+
+ul.nav-menu li {
+	display: inline;
+	margin-left: 25px;
+	margin-right: 25px;
+	text-decoration: underline;
+}
+
+ul.nav-menu li a {
+	list-style-type: none;
+ 	display: inline;
+}
+
+ul.nav-menu li a.active {
+	font-style: italic;
+	color: #999;
+}
+
+ul.nav-menu li a h3 {
+	display: inline;
+}
+
+#checkoutButton {
+	padding: 0 30px 0 30px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	border-radius: 0;
+	font-size: 25px;
+}
+
+.checkout-total-price {
+	display: inline-flex;
+	font-size: 35px;
+	letter-spacing: 3px;
+}
+
+#checkoutPaymentAmount {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  #checkoutModal .form-group {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    max-width: 50%;
+  }
+  #snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+.table td.right-align, .table th.right-align {
+	text-align: right;
+}
+.table td.center-align, .table th.center-align {
+	text-align: center;
+}
+.table td.left-align, .table th.left-align {
+	text-align: left;
+}
+.modal .table > tbody > tr > td:first-child, .modal .table > thead > tr > th:first-child {
+	padding-left:0px;
+}
+.table .col1 {
+	width:10%;
+}
+.table .col2 {
+	width:60%;
+}
+.table .col3 {
+	width:10%;
+}
+.table .col4 {
+	width:20%;
+}
+.navbar a {
+	color:rgba(255, 255, 255, 0.5);
+	padding: 0.5rem 1rem;
+
+}
+
+td.name {
+	width:35%;
+}
+td.image, td.image img {
+	width:20%;
+}
+.pagination {
+	margin: 15px auto;
+	display: flex;
+	list-style: none;
+	outline: none;
+	float: right;
+  }
+  .pagination > .active > a{
+	background-color: #47ccde ;
+	border-color: #47ccde ;
+	color: #fff;
+  }
+  .pagination > li > a{
+	border: 1px solid #47ccde ;
+	padding: 12px 15px;;
+	outline: none;
+	cursor: pointer;
+  }
+  .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+	background-color: #47ccde ;
+	border-color: #47ccde;
+	outline: none ;
+  }
+  .pagination > li > a, .pagination > li > span{
+	color: #47ccde
+  }
+  .pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+	border-radius: unset
+  }
+  .form-group button {
+	  padding-right: 1em;
+  }
